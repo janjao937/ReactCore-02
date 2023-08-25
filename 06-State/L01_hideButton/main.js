@@ -1,4 +1,14 @@
 // ReactDOM
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+
+
+const AppHideButton = ()=>{
+    const [isVisible,setIsvisible] = React.useState(true);
+    return(
+        <div>
+            <button className={`${isVisible?"visible":"invisible"}`} onClick={()=>setIsvisible(!isVisible)}>Button</button>
+        </div>
+    );
+}
+root.render(<AppHideButton/>)

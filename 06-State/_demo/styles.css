@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%; // root 16px * 0.625 == 10px
+    font-size: 62.5%; 
 }
 
 body {
@@ -25,4 +25,37 @@ h1 {
 
 .text-blue {
     color: blue;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: sandybrown;
+}
+.btn__container{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    width:200px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+   
+}
+.salmonColor{
+    background-color: salmon;
+}
+
+.dark{
+    background-color: black;
+    color: wheat;
+}
+.light
+{
+    background-color: wheat;
+    color: black;
 }
