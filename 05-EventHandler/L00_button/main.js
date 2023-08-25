@@ -1,4 +1,8 @@
 // ReactDOM
 const domRoot = document.getElementById('root');
 const root = ReactDOM.createRoot(domRoot);
-root.render(<h1>Hello React</h1>);
+const alertBtn =()=>{
+    console.log("Hello");
+    alert("Hello");
+}
+root.render(<button onClick={alertBtn}>BTN</button>);

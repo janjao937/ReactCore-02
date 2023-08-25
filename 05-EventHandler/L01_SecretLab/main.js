@@ -13,9 +13,11 @@ const Mosquito = () => {
             clearInterval(interval);
         };
     }, []);
+    const hitMos = ()=>alert("dead");
 
     return (
         <img
+            onClick={hitMos}
             src='./mos.jpeg'
             style={{
                 position: 'absolute',
