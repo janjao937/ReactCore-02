@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: salmon;
+}
+.app
+{
+    background-color: sandybrown;
+    border:dotted;
+    margin: 20px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    margin-bottom: 25px;
+}
+.item__list--container{
+    margin-top: 25px;
+}
+.item__container{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+}
+.item__container > a{
+   text-align: end ;
+   cursor: pointer;
+   color: red;
+   font-weight: 900;
+}
+.item__container > p{
+   font-size: large;
+   width: 205px;
+}
+.input__container{
+    display: flex;
+}
+.input__container > button{
+    width: 50px;
+    height: 25px;
+}
