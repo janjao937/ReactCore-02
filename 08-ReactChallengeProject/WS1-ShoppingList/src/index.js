@@ -21,10 +21,10 @@ const OnAddHandeler=()=>{
 }
 const RemoveItem=(i)=>{
   //  setItemList([]);
-   console.log(i);
+  //  console.log(i);
    setItemList(itemList.filter((e,index)=>index != i))
 }
-const CreateItem=(e,index)=>{
+const CreateItemDisplay=(e,index)=>{
   
     return(
           <div key ={index}className="item__container">
@@ -53,7 +53,7 @@ const CreateItem=(e,index)=>{
 
         <div className="item__list--container">
             {
-              itemList.map((e,index)=>CreateItem(e,index))
+              itemList.map((e,index)=>CreateItemDisplay(e,index))
             }
         </div>
 
